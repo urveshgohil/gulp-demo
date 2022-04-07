@@ -24,7 +24,7 @@ Some useful commands for above 6 points:
 
 gulpfile.js added packages
 
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('node-sass'));
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
+1. const gulp = require('gulp');
+2. const sass = require('gulp-sass')(require('node-sass'));
+3. const concat = require('gulp-concat');
+4. const uglify = require('gulp-uglify');
