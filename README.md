@@ -1,5 +1,5 @@
 # gulp-demo
-Gulp.jd Demo
+Gulp.js Demo
 
 Download and fire npm command.
 Using gulp, gulp-sass, node-sass, gulp-concat, gulp-uglify Packages.
