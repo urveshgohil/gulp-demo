@@ -30,8 +30,8 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
 }
 // rem
-@function rem($target, $context: $font_size) {
-    @return ($target / $context) * 1rem;
+@function rem($size) {
+    @return calc($size / 16) * 1rem;
 }
 // Color List Tooltip
 @mixin tooltipColor($className, $colorName, $colorOpacityOne, $colorOpacityTwo) {
@@ -52,17 +52,9 @@
         [class^="col-"], [class^="column-"] {padding-right: rem($space);padding-left: rem($space);}
         .row.space-#{$space * 2} {margin-top: rem(-$space); margin-bottom: rem(-$space)}
         .row.space-#{$space * 2} [class^="col-"], .row.space-#{$space * 2} [class^="column-"] {padding-top: rem($space); padding-bottom: rem($space);}
-        @include responsive(sm) {
-            .row.space-#{$space * 2} {margin-top: rem(-$space / 1.5); margin-bottom: rem(-$space / 1.5)}
-            .row.space-#{$space * 2} [class^="col-"], .row.space-#{$space * 2} [class^="column-"] {padding-top: rem($space / 1.5); padding-bottom: rem($space / 1.5);}
-        }
     } @else {
         .row.space-#{$space * 2} {@extend %felx-wrap; margin-right: rem(-$space); margin-left: rem(-$space); margin-top: rem(-$space); margin-bottom: rem(-$space)}
         .row.space-#{$space * 2} [class^="col-"],.row.space-#{$space * 2} [class^="column-"] {padding-top: rem($space); padding-right: rem($space);padding-left: rem($space); padding-bottom: rem($space);}
-        @include responsive(sm) {
-            .row.space-#{$space * 2} {margin-top: rem(-$space / 1.5); margin-bottom: rem(-$space / 1.5)}
-            .row.space-#{$space * 2} [class^="col-"], .row.space-#{$space * 2} [class^="column-"] {padding-top: rem($space / 1.5); padding-bottom: rem($space / 1.5);}
-        }
     }
 }
 // Circle
