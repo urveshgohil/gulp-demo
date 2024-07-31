@@ -6,7 +6,14 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"keywords": [],
+	"keywords": [
+		"Gulp",
+		"Gulp.js",
+		"Gulp demo",
+		"Gulp structure",
+		"Gulp es 5 syntax",
+		"Gulp es 5 structure"
+	],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
