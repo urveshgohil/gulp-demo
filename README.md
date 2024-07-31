@@ -2,7 +2,7 @@
 Gulp.js Demo
 
 Download and fire npm command.
-Using gulp, gulp-sass, node-sass, gulp-concat, gulp-uglify Packages.
+Using gulp, gulp-sass, gulp-concat, gulp-uglify, sass Packages.
 
 In this video, we will learn following things:
 1. How to install Gulp
@@ -17,14 +17,32 @@ Some useful commands for above 6 points:
 2. npm i gulp-cli -g
 3. npm i gulp --save-dev
 4. npm i gulp-sass --save-dev
-5. npm i node-sass --save-dev
+5. npm i sass --save-dev
 6. npm i gulp-concat --save-dev
 7. npm i gulp-uglify --save-dev
 
 
-gulpfile.js added packages
+gulpfile.js added packages using es 5 syntax
 
 1. const gulp = require('gulp');
-2. const sass = require('gulp-sass')(require('node-sass'));
+2. const sass = require('gulp-sass')(require('sass'));
 3. const concat = require('gulp-concat');
 4. const uglify = require('gulp-uglify');
+
+**Gulp command**
+
+```bash
+gulp task_name
+```
+
+```bash
+gulp styles
+```
+
+```bash
+gulp javascript
+```
+
+```bash
+gulp watch
+```
